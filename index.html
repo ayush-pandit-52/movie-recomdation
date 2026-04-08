@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎬 Movie Recommendation System</h1>
+            <p>Discover movies with semantic similarity magic</p>
+        </header>
+
+        <div class="search-box">
+            <input id="movieInput" type="text" placeholder="Search or enter a movie name...">
+            <button onclick="getRecommendations()">Recommend</button>
+        </div>
+        <div id="overlay" class="overlay hidden">
+            <div class="search-box-big">
+                <div class="spinner"></div>
+                <div id="searchText" class="search-text">
+                    Searching the universe 🌌
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <h2 class="section-title">Recommendations</h2>
+        <div id="results" class="movie-grid"></div>
+
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
